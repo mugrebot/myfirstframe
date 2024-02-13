@@ -27,7 +27,7 @@ export async function GET(req: NextRequest) {
           backgroundColor: "white",
         }}
       >
-        <Image
+        <img
           style={{
             height: "100%", // Make image full height
             objectFit: "cover", // Cover the area without losing aspect ratio

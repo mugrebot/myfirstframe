@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Echo() {
   return (
     <div className="space-y-4 flex flex-col place-items-center">
-         <Image
+         <img
           width={400}
           height={400}
           className="margin-auto"
