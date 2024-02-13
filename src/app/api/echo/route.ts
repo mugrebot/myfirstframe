@@ -5,6 +5,8 @@ const HUB_URL = process.env["HUB_URL"] || "nemes.farcaster.xyz:2283";
 const hubClient = getSSLHubRpcClient(HUB_URL);
 
 const postUrl = `${process.env["HOST"]}/api/code`;
+console.log(postUrl);
+console.log("beansbeansbeans2");
 
 export async function POST(req: NextRequest) {
   const {
