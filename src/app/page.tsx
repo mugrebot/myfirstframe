@@ -1,13 +1,10 @@
 import { Metadata } from "next";
 import Echo from "@/app/components/Echo";
 
-const postUrl = `https://myfirstframe.vercel.app/api/echo`;
-
-
+const postUrl = `${process.env["HOST"]}/api/echo`;
 
 export async function generateMetadata(): Promise<Metadata> {
-
-  const imageUrl = `https://myfirstframe.vercel.app/api/images/start?date=${Date.now()}`;
+  const imageUrl = `${process.env["HOST"]}/api/images/start?date=${Date.now()}`;
   return {
     title: "Echo the Dolphin",
     description: "Type something and Echo will say it back!",
