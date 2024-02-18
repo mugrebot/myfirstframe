@@ -23,6 +23,7 @@ export async function POST(req: NextRequest) {
     }
 
     const message = inputText ?? "";
+    console.log("message", message);
     const imageUrl = `${process.env["HOST"]}/api/images/echo?date=${Date.now()}&message=${message}`;
     return new NextResponse(
       `<!DOCTYPE html>
