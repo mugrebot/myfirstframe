@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
     const message = inputText ?? "";
     console.log("message", message);
     const imageUrl = `${process.env["HOST"]}/api/images/echo?date=${Date.now()}&message=${message}`;
+    console.log("imageUrl", imageUrl);
     return new NextResponse(
       `<!DOCTYPE html>
       <html>
